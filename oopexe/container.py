@@ -9,12 +9,12 @@ from random import *
 from functools import reduce
 import os
 if os.path.exists("circle.py"):
-    from shape import *
+    from circle import *
 else:
     raise AssertionError("Missing file: circle.py")
 
-if os.path.exists("square.py.py"):
-    from shape import *
+if os.path.exists("square.py"):
+    from square import *
 else:
     raise AssertionError("Missing file: square.py")
 

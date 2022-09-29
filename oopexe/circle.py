@@ -24,3 +24,14 @@ class Circle(Shape):
         """
         super().__init__(color, pi*(radius**2), 2*pi*radius)
         self.__radius = radius
+
+    def get_radius(self):
+        return self.__radius
+
+
+if __name__ == '__main__':
+    test = Circle("Red", 15)
+    assert test.get_color() == "Red"
+    assert test.get_area() == pi*225
+    assert test.get_perimeter() == 30*pi
+    assert test.get_radius() == 15

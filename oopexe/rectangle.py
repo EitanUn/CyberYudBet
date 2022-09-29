@@ -50,3 +50,14 @@ class Rectangle(Shape):
                     if self.get_side(i) == shape.get_side(j):  # check if the 2 shapes share a side
                         return Rectangle(side1=self.get_side(i), side2=(self.get_side(3-i) + shape.get_side(3-j)))
         return None
+
+
+if __name__ == '__main__':
+    test = Rectangle("Red", 15, 5)
+    assert test.get_color() == "Red"
+    assert test.get_area() == 75
+    assert test.get_perimeter() == 40
+    assert test.get_side(1) == 15
+    assert test.get_side(2) == 5
+    test2 = Rectangle("Red", 14, 5)
+    assert test.combine_shapes(test2).get_perimeter() == "68"
