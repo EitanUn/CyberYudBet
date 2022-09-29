@@ -11,7 +11,6 @@ else:
     raise AssertionError("Missing file: Shape.py")
 
 
-
 class Circle(Shape):
     """
     Circle class, inheriting from shape
