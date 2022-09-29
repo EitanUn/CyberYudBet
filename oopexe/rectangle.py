@@ -38,6 +38,24 @@ class Rectangle(Shape):
         else:
             return 0
 
+    def set_side1(self, side):
+        """
+        set func for side 1, updates area and perimeter
+        :param side: value to set to
+        """
+        self.__side1 = side
+        self.set_perimeter(2*(self.get_side(1)+self.get_side(2)))
+        self.set_area(self.get_side(1)*self.get_side(2))
+
+    def set_side2(self, side):
+        """
+        set func for side 2, updates area and perimeter
+        :param side: value to set to
+        """
+        self.__side2 = side
+        self.set_perimeter(2*(self.get_side(1)+self.get_side(2)))
+        self.set_area(self.get_side(1)*self.get_side(2))
+
     def combine_shapes(self, shape):
         """
         function for combining 2 rectangle/square shapes if they can share a side, otherwise return None

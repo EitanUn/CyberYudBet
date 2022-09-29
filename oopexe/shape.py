@@ -25,9 +25,22 @@ class Shape:
         """
         set function for color attribute
         :param color: color to set to
-        :return: none
         """
         self.__color = color
+
+    def set_area(self, area):
+        """
+        set function for area attribute
+        :param area: area to set to
+        """
+        self.__area = area
+
+    def set_perimeter(self, perimeter):
+        """
+        set function for perimeter attribute
+        :param perimeter: perimeter to set to
+        """
+        self.__perimeter = perimeter
 
     def get_color(self):
         """

@@ -25,7 +25,20 @@ class Circle(Shape):
         self.__radius = radius
 
     def get_radius(self):
+        """
+        get function for radius attribute
+        :return: shape's radius
+        """
         return self.__radius
+
+    def set_radius(self, radius):
+        """
+        set function for radius attribute, updates area and perimeter
+        :param radius: value to set to
+        """
+        self.__radius = radius
+        self.set_area((radius**2) * pi)
+        self.set_perimeter(radius*2*pi)
 
 
 if __name__ == '__main__':

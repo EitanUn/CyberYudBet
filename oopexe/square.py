@@ -22,6 +22,14 @@ class Square(Rectangle):
         """
         super().__init__(color, side, side)
 
+    def set_side(self, side):
+        """
+        set func for side, updates area and perimeter with set_side1 and set_side2
+        :param side: value to set to
+        """
+        self.set_side1(side)
+        self.set_side2(side)
+
 
 if __name__ == '__main__':
     test = Square("Red", 15)
